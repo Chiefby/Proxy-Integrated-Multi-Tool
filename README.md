@@ -1,6 +1,6 @@
 Multi-Tool | Proxy Integrated
 
-A simple Python command-line utility that includes a Discord Auto Sender and a Roblox Memory Guard.
+A simple Python command-line utility that includes a Discord Auto Sender, Memory Guard and a lot of features, for process managment.
 
 Features:
 
