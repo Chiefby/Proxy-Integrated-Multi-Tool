@@ -1,28 +1,40 @@
-Multi-Tool | Proxy Integrated
+# Multi-Tool | Proxy Integrated
 
-A simple Python command-line utility that includes a Discord Auto Sender, Memory Guard and a lot of features, for process managment.
+A comprehensive Python CLI multi-tool featuring Discord utilities, OSINT tools, network scanners, and Roblox process management. Built with a user-friendly interface, live proxy stats, and multiple color themes.
 
-Features:
+## Features
 
-Auto Sender
-Allows you to send messages to multiple Discord channels at a specific interval. You can paste large, multi-line text directly from your clipboard, and the tool will send it without breaking the formatting.
+### Discord
+- **Auto Sender:** Send messages to multiple Discord channels at custom intervals. Supports multi-line text and direct clipboard pasting.
+- **Token Checker:** Fetch detailed info about any Discord token (Email, Phone, Nitro, 2FA, Server count, Billing methods).
+- **Webhook Tool:** Fetch info about a webhook (Name, ID, Token) and instantly delete it if needed.
 
-Proxy Support
-You can run the tool through an HTTP or SOCKS proxy. It automatically formats IP, Port, Login, and Password. It also shows the proxy country and live ping status at the bottom right of the screen.
+### Main
+- **Roblox Memory Guard:** Monitors Roblox processes. Automatically closes them if they exceed a specified memory limit (MB) or run for too long. Ignores Crash Handlers.
+- **Fake Identity Generator:** Generates realistic fake identities (Name, Address, Email, Password) via API.
+- **Advanced Port Scanner:** Fast multi-threaded scanner for common network ports on any IP or domain.
 
-Roblox Memory Guard
-Monitors your Roblox processes. You can set a specific memory limit (MB) and a timer (hours). The tool will automatically close Roblox if it exceeds the limit or the time runs out. It safely ignores Crash Handlers.
+### Network & OSINT
+- **Social Media Lookup:** Fast multi-threaded username search across 11 popular platforms (GitHub, Twitter, Instagram, etc.).
+- **Proxy Scanner:** Bulk-check proxies for validity, live ping, country, and ISP.
+- **Deep IP/Domain Lookup:** Retrieves geolocation data, ISP, organization, and ASN for any IP or domain.
 
-Settings Menu
-Easily change your Discord token or proxy address at any time without needing to restart the program. The configuration is saved locally in a config.json file.
+### Other
+- **Settings Menu:** Easily change your Discord token, proxy address, or UI theme on the fly. Everything is saved locally.
+- **Hash Tool:** Quickly generate MD5, SHA256 hashes and Encode/Decode Base64 text.
 
-Requirements:
-- Python 3
-- requests
-- psutil
+### General Features
+- **Proxy Support:** Full integration for HTTP/SOCKS proxies. Auto-formats `ip:port:user:pass`. Shows proxy country and live ping status in the bottom right corner.
+- **Custom Themes:** Choose from 5 built-in color schemes (Default Green, Dracula, Nord, Tokyo Night, Cyberpunk).
 
-How to use:
-1. Install the required libraries (pip install requests psutil).
-2. Run the script.
-3. Enter your Discord token and proxy when prompted (it will remember them).
-4. Select a module from the main menu.
+## Requirements
+- Python 3.8+
+- `requests`
+- `psutil`
+
+## Installation & Usage
+
+1. Clone or download this repository.
+2. Install the required libraries:
+   ```bash
+   pip install requests psutil
